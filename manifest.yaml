@@ -1,0 +1,9 @@
+applications:
+  - name: guias-moviles
+    memory: 512M
+    instances: 1
+    path: .
+    host: guias-moviles
+    framework: node
+    command: node app
+    buildpack: sdk-for-nodejs

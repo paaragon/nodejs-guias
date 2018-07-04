@@ -1,0 +1,288 @@
+Retrieving logs for app [36;1mguias-moviles[0m in org [36;1mORANGESP[0m / space [36;1mDJINGO_FORMACION[0m as [36;1mpablo.aragon.moreno@es.ibm.com[0m...
+
+   2018-07-04T11:06:42.08+0200 [API/1] OUT Created app with guid 1752d03a-f97d-48e0-aa32-4b7af6d7080e
+   2018-07-04T11:06:43.80+0200 [API/0] OUT Updated app with guid 1752d03a-f97d-48e0-aa32-4b7af6d7080e ({"route"=>"15c1ea0b-e183-44da-8fcb-4038706bc3f5", :verb=>"add", :relation=>"routes", :related_guid=>"15c1ea0b-e183-44da-8fcb-4038706bc3f5"})
+   2018-07-04T11:06:52.30+0200 [API/0] OUT Creating build for app with guid 1752d03a-f97d-48e0-aa32-4b7af6d7080e
+   2018-07-04T11:06:53.84+0200 [API/0] OUT Updated app with guid 1752d03a-f97d-48e0-aa32-4b7af6d7080e ({"state"=>"STARTED"})
+   2018-07-04T11:06:53.95+0200 [STG/0] OUT Downloading sdk-for-nodejs...
+   2018-07-04T11:06:53.99+0200 [STG/0] OUT Downloaded sdk-for-nodejs
+   2018-07-04T11:06:53.99+0200 [STG/0] OUT Creating container
+   2018-07-04T11:06:54.96+0200 [STG/0] OUT Successfully created container
+   2018-07-04T11:06:54.96+0200 [STG/0] OUT Downloading app package...
+   2018-07-04T11:06:55.02+0200 [STG/0] OUT Downloaded app package (21.8K)
+   2018-07-04T11:06:55.02+0200 [STG/0] OUT Staging...
+   2018-07-04T11:06:55.42+0200 [STG/0] OUT -----> IBM SDK for Node.js Buildpack v3.20.2-20180524-2057
+   2018-07-04T11:06:55.43+0200 [STG/0] OUT        Based on Cloud Foundry Node.js Buildpack v1.5.24
+   2018-07-04T11:06:55.44+0200 [STG/0] OUT -----> Creating runtime environment
+   2018-07-04T11:06:55.44+0200 [STG/0] OUT        
+   2018-07-04T11:06:55.45+0200 [STG/0] OUT        NPM_CONFIG_LOGLEVEL=error
+   2018-07-04T11:06:55.45+0200 [STG/0] OUT        NPM_CONFIG_PRODUCTION=true
+   2018-07-04T11:06:55.45+0200 [STG/0] OUT        NODE_ENV=production
+   2018-07-04T11:06:55.45+0200 [STG/0] OUT        NODE_MODULES_CACHE=true
+   2018-07-04T11:06:55.46+0200 [STG/0] OUT -----> Installing binaries
+   2018-07-04T11:06:55.48+0200 [STG/0] OUT        engines.node (package.json):  unspecified
+   2018-07-04T11:06:55.48+0200 [STG/0] OUT        engines.npm (package.json):   unspecified (use default)
+   2018-07-04T11:06:55.48+0200 [STG/0] OUT        
+   2018-07-04T11:06:55.48+0200 [STG/0] OUT        Resolving node version (latest stable) via 'node-version-resolver'
+   2018-07-04T11:06:55.88+0200 [STG/0] OUT        Installing IBM SDK for Node.js (6.13.0) from cache
+   2018-07-04T11:06:57.96+0200 [STG/0] OUT        Using default npm version: 3.10.10
+   2018-07-04T11:06:57.96+0200 [STG/0] OUT -----> Restoring cache
+   2018-07-04T11:06:58.31+0200 [STG/0] OUT        Skipping cache restore (new runtime signature)
+   2018-07-04T11:06:58.31+0200 [STG/0] OUT -----> Building dependencies
+   2018-07-04T11:06:58.32+0200 [STG/0] OUT        Installing node modules (package.json)
+   2018-07-04T11:07:09.96+0200 [STG/0] OUT        fulfillment@0.0.0 /tmp/app
+   2018-07-04T11:07:09.96+0200 [STG/0] OUT        ├─┬ body-parser@1.18.3
+   2018-07-04T11:07:09.96+0200 [STG/0] OUT        │ ├── bytes@3.0.0
+   2018-07-04T11:07:09.96+0200 [STG/0] OUT        │ ├── content-type@1.0.4
+   2018-07-04T11:07:09.96+0200 [STG/0] OUT        │ ├── depd@1.1.2
+   2018-07-04T11:07:09.96+0200 [STG/0] OUT        │ ├─┬ http-errors@1.6.3
+   2018-07-04T11:07:09.96+0200 [STG/0] OUT        │ │ ├── inherits@2.0.3
+   2018-07-04T11:07:09.96+0200 [STG/0] OUT        │ │ ├── setprototypeof@1.1.0
+   2018-07-04T11:07:09.96+0200 [STG/0] OUT        │ │ └── statuses@1.5.0
+   2018-07-04T11:07:09.96+0200 [STG/0] OUT        │ ├─┬ iconv-lite@0.4.23
+   2018-07-04T11:07:09.96+0200 [STG/0] OUT        │ │ └── safer-buffer@2.1.2
+   2018-07-04T11:07:09.96+0200 [STG/0] OUT        │ ├─┬ on-finished@2.3.0
+   2018-07-04T11:07:09.96+0200 [STG/0] OUT        │ │ └── ee-first@1.1.1
+   2018-07-04T11:07:09.96+0200 [STG/0] OUT        │ ├── qs@6.5.2
+   2018-07-04T11:07:09.96+0200 [STG/0] OUT        │ ├─┬ raw-body@2.3.3
+   2018-07-04T11:07:09.96+0200 [STG/0] OUT        │ │ └── unpipe@1.0.0
+   2018-07-04T11:07:09.96+0200 [STG/0] OUT        │ └─┬ type-is@1.6.16
+   2018-07-04T11:07:09.96+0200 [STG/0] OUT        │   └── media-typer@0.3.0
+   2018-07-04T11:07:09.96+0200 [STG/0] OUT        ├─┬ config@1.30.0
+   2018-07-04T11:07:09.96+0200 [STG/0] OUT        │ ├── json5@0.4.0
+   2018-07-04T11:07:09.96+0200 [STG/0] OUT        │ └── os-homedir@1.0.2
+   2018-07-04T11:07:09.96+0200 [STG/0] OUT        ├─┬ cookie-parser@1.4.3
+   2018-07-04T11:07:09.96+0200 [STG/0] OUT        │ ├── cookie@0.3.1
+   2018-07-04T11:07:09.96+0200 [STG/0] OUT        │ └── cookie-signature@1.0.6
+   2018-07-04T11:07:09.96+0200 [STG/0] OUT        ├─┬ cors@2.8.4
+   2018-07-04T11:07:09.96+0200 [STG/0] OUT        │ ├── object-assign@4.1.1
+   2018-07-04T11:07:09.96+0200 [STG/0] OUT        │ └── vary@1.1.2
+   2018-07-04T11:07:09.96+0200 [STG/0] OUT        ├─┬ debug@2.6.9
+   2018-07-04T11:07:09.96+0200 [STG/0] OUT        │ └── ms@2.0.0
+   2018-07-04T11:07:09.96+0200 [STG/0] OUT        ├─┬ express@4.15.5
+   2018-07-04T11:07:09.96+0200 [STG/0] OUT        │ ├─┬ accepts@1.3.5
+   2018-07-04T11:07:09.96+0200 [STG/0] OUT        │ │ └── negotiator@0.6.1
+   2018-07-04T11:07:09.96+0200 [STG/0] OUT        │ ├── array-flatten@1.1.1
+   2018-07-04T11:07:09.96+0200 [STG/0] OUT        │ ├── content-disposition@0.5.2
+   2018-07-04T11:07:09.96+0200 [STG/0] OUT        │ ├── encodeurl@1.0.2
+   2018-07-04T11:07:09.96+0200 [STG/0] OUT        │ ├── escape-html@1.0.3
+   2018-07-04T11:07:09.96+0200 [STG/0] OUT        │ ├── etag@1.8.1
+   2018-07-04T11:07:09.96+0200 [STG/0] OUT        │ ├─┬ finalhandler@1.0.6
+   2018-07-04T11:07:09.96+0200 [STG/0] OUT        │ │ └── statuses@1.3.1
+   2018-07-04T11:07:09.96+0200 [STG/0] OUT        │ ├── fresh@0.5.2
+   2018-07-04T11:07:09.96+0200 [STG/0] OUT        │ ├── merge-descriptors@1.0.1
+   2018-07-04T11:07:09.96+0200 [STG/0] OUT        │ ├── methods@1.1.2
+   2018-07-04T11:07:09.96+0200 [STG/0] OUT        │ ├── parseurl@1.3.2
+   2018-07-04T11:07:09.96+0200 [STG/0] OUT        │ ├── path-to-regexp@0.1.7
+   2018-07-04T11:07:09.96+0200 [STG/0] OUT        │ ├─┬ proxy-addr@1.1.5
+   2018-07-04T11:07:09.96+0200 [STG/0] OUT        │ │ ├── forwarded@0.1.2
+   2018-07-04T11:07:09.96+0200 [STG/0] OUT        │ │ └── ipaddr.js@1.4.0
+   2018-07-04T11:07:09.96+0200 [STG/0] OUT        │ ├── qs@6.5.0
+   2018-07-04T11:07:09.96+0200 [STG/0] OUT        │ ├── range-parser@1.2.0
+   2018-07-04T11:07:09.96+0200 [STG/0] OUT        │ ├─┬ send@0.15.6
+   2018-07-04T11:07:09.96+0200 [STG/0] OUT        │ │ ├── destroy@1.0.4
+   2018-07-04T11:07:09.96+0200 [STG/0] OUT        │ │ ├── mime@1.3.4
+   2018-07-04T11:07:09.96+0200 [STG/0] OUT        │ │ └── statuses@1.3.1
+   2018-07-04T11:07:09.96+0200 [STG/0] OUT        │ ├── serve-static@1.12.6
+   2018-07-04T11:07:09.96+0200 [STG/0] OUT        │ ├── setprototypeof@1.0.3
+   2018-07-04T11:07:09.96+0200 [STG/0] OUT        │ ├── statuses@1.3.1
+   2018-07-04T11:07:09.96+0200 [STG/0] OUT        │ └── utils-merge@1.0.0
+   2018-07-04T11:07:09.96+0200 [STG/0] OUT        ├─┬ jade@1.11.0
+   2018-07-04T11:07:09.96+0200 [STG/0] OUT        │ ├── character-parser@1.2.1
+   2018-07-04T11:07:09.97+0200 [STG/0] OUT        │ ├─┬ clean-css@3.4.28
+   2018-07-04T11:07:09.97+0200 [STG/0] OUT        │ │ ├─┬ commander@2.8.1
+   2018-07-04T11:07:09.97+0200 [STG/0] OUT        │ │ │ └── graceful-readlink@1.0.1
+   2018-07-04T11:07:09.97+0200 [STG/0] OUT        │ │ └─┬ source-map@0.4.4
+   2018-07-04T11:07:09.97+0200 [STG/0] OUT        │ │   └── amdefine@1.0.1
+   2018-07-04T11:07:09.97+0200 [STG/0] OUT        │ ├── commander@2.6.0
+   2018-07-04T11:07:09.97+0200 [STG/0] OUT        │ ├─┬ constantinople@3.0.2
+   2018-07-04T11:07:09.97+0200 [STG/0] OUT        │ │ └── acorn@2.7.0
+   2018-07-04T11:07:09.97+0200 [STG/0] OUT        │ ├─┬ jstransformer@0.0.2
+   2018-07-04T11:07:09.97+0200 [STG/0] OUT        │ │ ├── is-promise@2.1.0
+   2018-07-04T11:07:09.97+0200 [STG/0] OUT        │ │ └─┬ promise@6.1.0
+   2018-07-04T11:07:09.97+0200 [STG/0] OUT        │ │   └── asap@1.0.0
+   2018-07-04T11:07:09.97+0200 [STG/0] OUT        │ ├─┬ mkdirp@0.5.1
+   2018-07-04T11:07:09.97+0200 [STG/0] OUT        │ │ └── minimist@0.0.8
+   2018-07-04T11:07:09.97+0200 [STG/0] OUT        │ ├─┬ transformers@2.1.0
+   2018-07-04T11:07:09.97+0200 [STG/0] OUT        │ │ ├─┬ css@1.0.8
+   2018-07-04T11:07:09.97+0200 [STG/0] OUT        │ │ │ ├── css-parse@1.0.4
+   2018-07-04T11:07:09.97+0200 [STG/0] OUT        │ │ │ └── css-stringify@1.0.5
+   2018-07-04T11:07:09.97+0200 [STG/0] OUT        │ │ ├─┬ promise@2.0.0
+   2018-07-04T11:07:09.97+0200 [STG/0] OUT        │ │ │ └── is-promise@1.0.1
+   2018-07-04T11:07:09.97+0200 [STG/0] OUT        │ │ └─┬ uglify-js@2.2.5
+   2018-07-04T11:07:09.97+0200 [STG/0] OUT        │ │   ├─┬ optimist@0.3.7
+   2018-07-04T11:07:09.97+0200 [STG/0] OUT        │ │   │ └── wordwrap@0.0.3
+   2018-07-04T11:07:09.97+0200 [STG/0] OUT        │ │   └── source-map@0.1.43
+   2018-07-04T11:07:09.97+0200 [STG/0] OUT        │ ├─┬ uglify-js@2.8.29
+   2018-07-04T11:07:09.97+0200 [STG/0] OUT        │ │ ├── source-map@0.5.7
+   2018-07-04T11:07:09.97+0200 [STG/0] OUT        │ │ ├── uglify-to-browserify@1.0.2
+   2018-07-04T11:07:09.97+0200 [STG/0] OUT        │ │ └─┬ yargs@3.10.0
+   2018-07-04T11:07:09.97+0200 [STG/0] OUT        │ │   ├── camelcase@1.2.1
+   2018-07-04T11:07:09.97+0200 [STG/0] OUT        │ │   ├─┬ cliui@2.1.0
+   2018-07-04T11:07:09.97+0200 [STG/0] OUT        │ │   │ ├─┬ center-align@0.1.3
+   2018-07-04T11:07:09.97+0200 [STG/0] OUT        │ │   │ │ ├─┬ align-text@0.1.4
+   2018-07-04T11:07:09.97+0200 [STG/0] OUT        │ │   │ │ │ ├─┬ kind-of@3.2.2
+   2018-07-04T11:07:09.97+0200 [STG/0] OUT        │ │   │ │ │ │ └── is-buffer@1.1.6
+   2018-07-04T11:07:09.97+0200 [STG/0] OUT        │ │   │ │ │ ├── longest@1.0.1
+   2018-07-04T11:07:09.97+0200 [STG/0] OUT        │ │   │ │ │ └── repeat-string@1.6.1
+   2018-07-04T11:07:09.97+0200 [STG/0] OUT        │ │   │ │ └── lazy-cache@1.0.4
+   2018-07-04T11:07:09.97+0200 [STG/0] OUT        │ │   │ ├── right-align@0.1.3
+   2018-07-04T11:07:09.97+0200 [STG/0] OUT        │ │   │ └── wordwrap@0.0.2
+   2018-07-04T11:07:09.97+0200 [STG/0] OUT        │ │   ├── decamelize@1.2.0
+   2018-07-04T11:07:09.97+0200 [STG/0] OUT        │ │   └── window-size@0.1.0
+   2018-07-04T11:07:09.97+0200 [STG/0] OUT        │ ├── void-elements@2.0.1
+   2018-07-04T11:07:09.97+0200 [STG/0] OUT        │ └─┬ with@4.0.3
+   2018-07-04T11:07:09.97+0200 [STG/0] OUT        │   ├── acorn@1.2.2
+   2018-07-04T11:07:09.97+0200 [STG/0] OUT        │   └── acorn-globals@1.0.9
+   2018-07-04T11:07:09.97+0200 [STG/0] OUT        ├─┬ morgan@1.9.0
+   2018-07-04T11:07:09.97+0200 [STG/0] OUT        │ ├── basic-auth@2.0.0
+   2018-07-04T11:07:09.97+0200 [STG/0] OUT        │ └── on-headers@1.0.1
+   2018-07-04T11:07:09.97+0200 [STG/0] OUT        ├─┬ request@2.87.0
+   2018-07-04T11:07:09.97+0200 [STG/0] OUT        │ ├── aws-sign2@0.7.0
+   2018-07-04T11:07:09.97+0200 [STG/0] OUT        │ ├── aws4@1.7.0
+   2018-07-04T11:07:09.97+0200 [STG/0] OUT        │ ├── caseless@0.12.0
+   2018-07-04T11:07:09.97+0200 [STG/0] OUT        │ ├─┬ combined-stream@1.0.6
+   2018-07-04T11:07:09.97+0200 [STG/0] OUT        │ │ └── delayed-stream@1.0.0
+   2018-07-04T11:07:09.97+0200 [STG/0] OUT        │ ├── extend@3.0.1
+   2018-07-04T11:07:09.97+0200 [STG/0] OUT        │ ├── forever-agent@0.6.1
+   2018-07-04T11:07:09.97+0200 [STG/0] OUT        │ ├─┬ form-data@2.3.2
+   2018-07-04T11:07:09.97+0200 [STG/0] OUT        │ │ └── asynckit@0.4.0
+   2018-07-04T11:07:09.97+0200 [STG/0] OUT        │ ├─┬ har-validator@5.0.3
+   2018-07-04T11:07:09.97+0200 [STG/0] OUT        │ │ ├─┬ ajv@5.5.2
+   2018-07-04T11:07:09.97+0200 [STG/0] OUT        │ │ │ ├── co@4.6.0
+   2018-07-04T11:07:09.97+0200 [STG/0] OUT        │ │ │ ├── fast-deep-equal@1.1.0
+   2018-07-04T11:07:09.97+0200 [STG/0] OUT        │ │ │ ├── fast-json-stable-stringify@2.0.0
+   2018-07-04T11:07:09.97+0200 [STG/0] OUT        │ │ │ └── json-schema-traverse@0.3.1
+   2018-07-04T11:07:09.97+0200 [STG/0] OUT        │ │ └── har-schema@2.0.0
+   2018-07-04T11:07:09.97+0200 [STG/0] OUT        │ ├─┬ http-signature@1.2.0
+   2018-07-04T11:07:09.98+0200 [STG/0] OUT        │ │ ├── assert-plus@1.0.0
+   2018-07-04T11:07:09.98+0200 [STG/0] OUT        │ │ ├─┬ jsprim@1.4.1
+   2018-07-04T11:07:09.98+0200 [STG/0] OUT        │ │ │ ├── extsprintf@1.3.0
+   2018-07-04T11:07:09.98+0200 [STG/0] OUT        │ │ │ ├── json-schema@0.2.3
+   2018-07-04T11:07:09.98+0200 [STG/0] OUT        │ │ │ └─┬ verror@1.10.0
+   2018-07-04T11:07:09.98+0200 [STG/0] OUT        │ │ │   └── core-util-is@1.0.2
+   2018-07-04T11:07:09.98+0200 [STG/0] OUT        │ │ └─┬ sshpk@1.14.2
+   2018-07-04T11:07:09.98+0200 [STG/0] OUT        │ │   ├── asn1@0.2.3
+   2018-07-04T11:07:09.98+0200 [STG/0] OUT        │ │   ├── bcrypt-pbkdf@1.0.2
+   2018-07-04T11:07:09.98+0200 [STG/0] OUT        │ │   ├── dashdash@1.14.1
+   2018-07-04T11:07:09.98+0200 [STG/0] OUT        │ │   ├── ecc-jsbn@0.1.1
+   2018-07-04T11:07:09.98+0200 [STG/0] OUT        │ │   ├── getpass@0.1.7
+   2018-07-04T11:07:09.98+0200 [STG/0] OUT        │ │   ├── jsbn@0.1.1
+   2018-07-04T11:07:09.98+0200 [STG/0] OUT        │ │   └── tweetnacl@0.14.5
+   2018-07-04T11:07:09.98+0200 [STG/0] OUT        │ ├── is-typedarray@1.0.0
+   2018-07-04T11:07:09.98+0200 [STG/0] OUT        │ ├── isstream@0.1.2
+   2018-07-04T11:07:09.98+0200 [STG/0] OUT        │ ├── json-stringify-safe@5.0.1
+   2018-07-04T11:07:09.98+0200 [STG/0] OUT        │ ├─┬ mime-types@2.1.18
+   2018-07-04T11:07:09.98+0200 [STG/0] OUT        │ │ └── mime-db@1.33.0
+   2018-07-04T11:07:09.98+0200 [STG/0] OUT        │ ├── oauth-sign@0.8.2
+   2018-07-04T11:07:09.98+0200 [STG/0] OUT        │ ├── performance-now@2.1.0
+   2018-07-04T11:07:09.98+0200 [STG/0] OUT        │ ├── safe-buffer@5.1.1
+   2018-07-04T11:07:09.98+0200 [STG/0] OUT        │ ├─┬ tough-cookie@2.3.4
+   2018-07-04T11:07:09.98+0200 [STG/0] OUT        │ │ └── punycode@1.4.1
+   2018-07-04T11:07:09.98+0200 [STG/0] OUT        │ ├── tunnel-agent@0.6.0
+   2018-07-04T11:07:09.98+0200 [STG/0] OUT        │ └── uuid@3.3.2
+   2018-07-04T11:07:09.98+0200 [STG/0] OUT        └── serve-favicon@2.4.5
+   2018-07-04T11:07:09.98+0200 [STG/0] OUT        
+   2018-07-04T11:07:09.98+0200 [STG/0] OUT -----> Installing App Management
+   2018-07-04T11:07:15.32+0200 [STG/0] OUT Checking for Dynatrace credentials
+   2018-07-04T11:07:15.32+0200 [STG/0] OUT No Dynatrace Service Found (service with substring dynatrace not found in VCAP_SERVICES)
+   2018-07-04T11:07:15.33+0200 [STG/0] OUT -----> Caching build
+   2018-07-04T11:07:15.34+0200 [STG/0] OUT        Clearing previous node cache
+   2018-07-04T11:07:15.34+0200 [STG/0] OUT        Saving 2 cacheDirectories (default):
+   2018-07-04T11:07:15.34+0200 [STG/0] OUT        - node_modules
+   2018-07-04T11:07:16.13+0200 [STG/0] OUT        - bower_components (nothing to cache)
+   2018-07-04T11:07:16.50+0200 [STG/0] OUT -----> Build succeeded!
+   2018-07-04T11:07:18.37+0200 [STG/0] OUT        ├── body-parser@1.18.3
+   2018-07-04T11:07:18.37+0200 [STG/0] OUT        ├── config@1.30.0
+   2018-07-04T11:07:18.37+0200 [STG/0] OUT        ├── cookie-parser@1.4.3
+   2018-07-04T11:07:18.37+0200 [STG/0] OUT        ├── cors@2.8.4
+   2018-07-04T11:07:18.37+0200 [STG/0] OUT        ├── debug@2.6.9
+   2018-07-04T11:07:18.37+0200 [STG/0] OUT        ├── express@4.15.5
+   2018-07-04T11:07:18.37+0200 [STG/0] OUT        ├── jade@1.11.0
+   2018-07-04T11:07:18.37+0200 [STG/0] OUT        ├── morgan@1.9.0
+   2018-07-04T11:07:18.37+0200 [STG/0] OUT        ├── request@2.87.0
+   2018-07-04T11:07:18.37+0200 [STG/0] OUT        └── serve-favicon@2.4.5
+   2018-07-04T11:07:18.37+0200 [STG/0] OUT        
+   2018-07-04T11:07:26.74+0200 [STG/0] OUT Exit status 0
+   2018-07-04T11:07:26.74+0200 [STG/0] OUT Staging complete
+   2018-07-04T11:07:26.74+0200 [STG/0] OUT Uploading droplet, build artifacts cache...
+   2018-07-04T11:07:26.74+0200 [STG/0] OUT Uploading build artifacts cache...
+   2018-07-04T11:07:26.74+0200 [STG/0] OUT Uploading droplet...
+   2018-07-04T11:07:26.88+0200 [STG/0] OUT Uploaded build artifacts cache (2.6M)
+   2018-07-04T11:07:27.32+0200 [API/0] OUT Creating droplet for app with guid 1752d03a-f97d-48e0-aa32-4b7af6d7080e
+   2018-07-04T11:07:30.55+0200 [STG/0] OUT Uploaded droplet (21.8M)
+   2018-07-04T11:07:30.55+0200 [STG/0] OUT Uploading complete
+   2018-07-04T11:07:30.65+0200 [STG/0] OUT Stopping instance b7d3e84f-7e85-4837-b7cb-e95e63ca803a
+   2018-07-04T11:07:30.65+0200 [STG/0] OUT Destroying container
+   2018-07-04T11:07:31.76+0200 [STG/0] OUT Successfully destroyed container
+   2018-07-04T11:07:31.87+0200 [CELL/0] OUT Creating container
+   2018-07-04T11:07:33.08+0200 [CELL/0] OUT Successfully created container
+   2018-07-04T11:07:36.44+0200 [CELL/0] OUT Starting health monitoring of container
+   [31m2018-07-04T11:07:36.94+0200 [APP/PROC/WEB/0] ERR module.js:478[0m
+   [31m2018-07-04T11:07:36.94+0200 [APP/PROC/WEB/0] ERR     throw err;[0m
+   [31m2018-07-04T11:07:36.94+0200 [APP/PROC/WEB/0] ERR     ^[0m
+   [31m2018-07-04T11:07:36.94+0200 [APP/PROC/WEB/0] ERR Error: Cannot find module './api/v1/djingo-proxy'[0m
+   [31m2018-07-04T11:07:36.94+0200 [APP/PROC/WEB/0] ERR     at Function.Module._resolveFilename (module.js:476:15)[0m
+   [31m2018-07-04T11:07:36.94+0200 [APP/PROC/WEB/0] ERR     at Function.Module._load (module.js:424:25)[0m
+   [31m2018-07-04T11:07:36.94+0200 [APP/PROC/WEB/0] ERR     at Module.require (module.js:504:17)[0m
+   [31m2018-07-04T11:07:36.94+0200 [APP/PROC/WEB/0] ERR     at require (internal/module.js:20:19)[0m
+   [31m2018-07-04T11:07:36.94+0200 [APP/PROC/WEB/0] ERR     at Object.<anonymous> (/home/vcap/app/app.js:9:19)[0m
+   [31m2018-07-04T11:07:36.94+0200 [APP/PROC/WEB/0] ERR     at Module._compile (module.js:577:32)[0m
+   [31m2018-07-04T11:07:36.94+0200 [APP/PROC/WEB/0] ERR     at Object.Module._extensions..js (module.js:586:10)[0m
+   [31m2018-07-04T11:07:36.94+0200 [APP/PROC/WEB/0] ERR     at Module.load (module.js:494:32)[0m
+   [31m2018-07-04T11:07:36.94+0200 [APP/PROC/WEB/0] ERR     at tryModuleLoad (module.js:453:12)[0m
+   [31m2018-07-04T11:07:36.94+0200 [APP/PROC/WEB/0] ERR     at Function.Module._load (module.js:445:3)[0m
+   2018-07-04T11:07:36.96+0200 [APP/PROC/WEB/0] OUT Exit status 1
+   2018-07-04T11:07:36.97+0200 [CELL/0] OUT Exit status 0
+   2018-07-04T11:07:37.02+0200 [CELL/0] OUT Stopping instance 53c42940-7865-492b-7925-c57e
+   2018-07-04T11:07:37.02+0200 [CELL/0] OUT Destroying container
+   2018-07-04T11:07:37.06+0200 [API/0] OUT Process has crashed with type: "web"
+   2018-07-04T11:07:37.09+0200 [API/0] OUT App instance exited with guid 1752d03a-f97d-48e0-aa32-4b7af6d7080e payload: {"instance"=>"53c42940-7865-492b-7925-c57e", "index"=>0, "reason"=>"CRASHED", "exit_description"=>"APP/PROC/WEB: Exited with status 1", "crash_count"=>1, "crash_timestamp"=>1530695256978893317, "version"=>"55201020-7356-4fdc-b3be-c30a32d4c367"}
+   2018-07-04T11:07:37.57+0200 [CELL/0] OUT Creating container
+   2018-07-04T11:07:37.99+0200 [CELL/0] OUT Successfully destroyed container
+   2018-07-04T11:07:38.57+0200 [CELL/0] OUT Successfully created container
+   2018-07-04T11:07:41.69+0200 [CELL/0] OUT Starting health monitoring of container
+   [31m2018-07-04T11:07:42.13+0200 [APP/PROC/WEB/0] ERR module.js:478[0m
+   [31m2018-07-04T11:07:42.13+0200 [APP/PROC/WEB/0] ERR     throw err;[0m
+   [31m2018-07-04T11:07:42.13+0200 [APP/PROC/WEB/0] ERR     ^[0m
+   [31m2018-07-04T11:07:42.13+0200 [APP/PROC/WEB/0] ERR Error: Cannot find module './api/v1/djingo-proxy'[0m
+   [31m2018-07-04T11:07:42.13+0200 [APP/PROC/WEB/0] ERR     at Function.Module._resolveFilename (module.js:476:15)[0m
+   [31m2018-07-04T11:07:42.13+0200 [APP/PROC/WEB/0] ERR     at Function.Module._load (module.js:424:25)[0m
+   [31m2018-07-04T11:07:42.13+0200 [APP/PROC/WEB/0] ERR     at Module.require (module.js:504:17)[0m
+   [31m2018-07-04T11:07:42.13+0200 [APP/PROC/WEB/0] ERR     at require (internal/module.js:20:19)[0m
+   [31m2018-07-04T11:07:42.13+0200 [APP/PROC/WEB/0] ERR     at Object.<anonymous> (/home/vcap/app/app.js:9:19)[0m
+   [31m2018-07-04T11:07:42.13+0200 [APP/PROC/WEB/0] ERR     at Module._compile (module.js:577:32)[0m
+   [31m2018-07-04T11:07:42.13+0200 [APP/PROC/WEB/0] ERR     at Object.Module._extensions..js (module.js:586:10)[0m
+   [31m2018-07-04T11:07:42.13+0200 [APP/PROC/WEB/0] ERR     at Module.load (module.js:494:32)[0m
+   [31m2018-07-04T11:07:42.13+0200 [APP/PROC/WEB/0] ERR     at tryModuleLoad (module.js:453:12)[0m
+   [31m2018-07-04T11:07:42.13+0200 [APP/PROC/WEB/0] ERR     at Function.Module._load (module.js:445:3)[0m
+   2018-07-04T11:07:42.16+0200 [APP/PROC/WEB/0] OUT Exit status 1
+   2018-07-04T11:07:42.17+0200 [CELL/0] OUT Exit status 0
+   2018-07-04T11:07:42.21+0200 [CELL/0] OUT Stopping instance 6780ba6e-a961-491d-5e00-886e
+   2018-07-04T11:07:42.21+0200 [CELL/0] OUT Destroying container
+   2018-07-04T11:07:42.23+0200 [API/0] OUT Process has crashed with type: "web"
+   2018-07-04T11:07:42.25+0200 [API/0] OUT App instance exited with guid 1752d03a-f97d-48e0-aa32-4b7af6d7080e payload: {"instance"=>"6780ba6e-a961-491d-5e00-886e", "index"=>0, "reason"=>"CRASHED", "exit_description"=>"APP/PROC/WEB: Exited with status 1", "crash_count"=>2, "crash_timestamp"=>1530695262180043668, "version"=>"55201020-7356-4fdc-b3be-c30a32d4c367"}
+   2018-07-04T11:07:43.35+0200 [CELL/0] OUT Successfully destroyed container
+   2018-07-04T11:07:44.11+0200 [CELL/0] OUT Successfully created container
+   2018-07-04T11:07:45.77+0200 [CELL/0] OUT Starting health monitoring of container
+   [31m2018-07-04T11:07:46.18+0200 [APP/PROC/WEB/0] ERR module.js:478[0m
+   [31m2018-07-04T11:07:46.18+0200 [APP/PROC/WEB/0] ERR     throw err;[0m
+   [31m2018-07-04T11:07:46.18+0200 [APP/PROC/WEB/0] ERR     ^[0m
+   [31m2018-07-04T11:07:46.18+0200 [APP/PROC/WEB/0] ERR Error: Cannot find module './api/v1/djingo-proxy'[0m
+   [31m2018-07-04T11:07:46.18+0200 [APP/PROC/WEB/0] ERR     at Function.Module._resolveFilename (module.js:476:15)[0m
+   [31m2018-07-04T11:07:46.18+0200 [APP/PROC/WEB/0] ERR     at Function.Module._load (module.js:424:25)[0m
+   [31m2018-07-04T11:07:46.18+0200 [APP/PROC/WEB/0] ERR     at Module.require (module.js:504:17)[0m
+   [31m2018-07-04T11:07:46.18+0200 [APP/PROC/WEB/0] ERR     at require (internal/module.js:20:19)[0m
+   [31m2018-07-04T11:07:46.18+0200 [APP/PROC/WEB/0] ERR     at Object.<anonymous> (/home/vcap/app/app.js:9:19)[0m
+   [31m2018-07-04T11:07:46.18+0200 [APP/PROC/WEB/0] ERR     at Module._compile (module.js:577:32)[0m
+   [31m2018-07-04T11:07:46.18+0200 [APP/PROC/WEB/0] ERR     at Object.Module._extensions..js (module.js:586:10)[0m
+   [31m2018-07-04T11:07:46.18+0200 [APP/PROC/WEB/0] ERR     at Module.load (module.js:494:32)[0m
+   [31m2018-07-04T11:07:46.18+0200 [APP/PROC/WEB/0] ERR     at tryModuleLoad (module.js:453:12)[0m
+   [31m2018-07-04T11:07:46.18+0200 [APP/PROC/WEB/0] ERR     at Function.Module._load (module.js:445:3)[0m
+   2018-07-04T11:07:46.19+0200 [APP/PROC/WEB/0] OUT Exit status 1
+   2018-07-04T11:07:46.19+0200 [CELL/0] OUT Exit status 0
+   2018-07-04T11:07:46.20+0200 [CELL/0] OUT Stopping instance 7e868fb5-624b-4c3b-7560-5506
+   2018-07-04T11:07:46.20+0200 [CELL/0] OUT Destroying container
+   2018-07-04T11:07:46.24+0200 [API/0] OUT Process has crashed with type: "web"
+   2018-07-04T11:07:46.27+0200 [API/0] OUT App instance exited with guid 1752d03a-f97d-48e0-aa32-4b7af6d7080e payload: {"instance"=>"7e868fb5-624b-4c3b-7560-5506", "index"=>0, "reason"=>"CRASHED", "exit_description"=>"APP/PROC/WEB: Exited with status 1", "crash_count"=>3, "crash_timestamp"=>1530695266205458301, "version"=>"55201020-7356-4fdc-b3be-c30a32d4c367"}
+   2018-07-04T11:07:47.25+0200 [CELL/0] OUT Successfully destroyed container
